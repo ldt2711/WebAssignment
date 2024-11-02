@@ -1,10 +1,10 @@
 //slider
 var curimg = 0;
 const sliders = [
-    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/acquy.png', link: 'https://example.com/page1' },
-    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/nobody.jpg', link: 'https://example.com/page2' },
-    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/venom.png', link: 'https://example.com/page3' },
-    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/codauhaomon.png', link: 'https://example.com/page4' }
+    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/acquy.png', link: 'https://ldt2711.github.io/WebAssignment/movies/AcQuyTruyHon.html' },
+    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/nobody.jpg', link: 'https://ldt2711.github.io/WebAssignment/movies/Nobody.html' },
+    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/venom.png', link: 'https://ldt2711.github.io/WebAssignment/movies/Venom.html' },
+    { src: 'https://ldt2711.github.io/WebAssignment/assets/img/codauhaomon.png', link: 'https://ldt2711.github.io/WebAssignment/movies/CoDauHaoMon.html' }
 ];
 let auto;
 
