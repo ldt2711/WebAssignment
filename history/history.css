@@ -5,8 +5,15 @@
 body {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* start content */
+#content{
+    flex: 1;
+}
 div.content-header {
     margin: 20px;
     text-align: center;
@@ -17,7 +24,7 @@ table {
     margin: 0 auto;
 }
 table, th, td {
-    border: 0 solid black;
+    border: 0;
 }
 th, td {
     padding: 10px;
