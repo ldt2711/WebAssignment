@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-image: url(img/galaxy.jpg);
+    background-color:#f3ecec;
     margin: 0 auto;
 }
 .between{
@@ -34,6 +34,7 @@ h1{
 }
 .km{
     height: 465px;
+    background-color:#424239;
     width: 407px;
     box-sizing: border-box;
     border-style: solid; 
