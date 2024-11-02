@@ -1,9 +1,16 @@
 // Hàm tải lịch sử từ LocalStorage và hiển thị
 function loadHistory() {
-    let history = JSON.parse(localStorage.getItem('movieHistory')) || [];
+    const currentUser = localStorage.getItem('currentUser'); // Lấy tên người dùng hiện tại
+    if (!currentUser) {
+        alert("Vui lòng đăng nhập để xem lịch sử.");
+        return;
+    }
+
+    let userHistory = JSON.parse(localStorage.getItem(`movieHistory_${currentUser}`)) || [];
     const tableBody = document.getElementById('history-table').getElementsByTagName('tbody')[0];
-    
-    history.forEach(item => {
+    tableBody.innerHTML = ''; // Xóa các dòng cũ trước khi hiển thị
+
+    userHistory.forEach(item => {
         let row = tableBody.insertRow();
         
         let cell1 = row.insertCell(0);
