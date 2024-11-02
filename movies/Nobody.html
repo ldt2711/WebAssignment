@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nobody</title>
+	<link rel="stylesheet" type="text/css" href="movies.css">
+	<link rel="stylesheet" href="https://ldt2711.github.io/WebAssignment/assets/css/base.css">
+    <script src="movies.js"></script>
+    <script src="https://ldt2711.github.io/WebAssignment/assets/js/script.js"></script>
+    <script src="https://ldt2711.github.io/WebAssignment/assets/js/logout.js"></script>
+</head>
+<body>
+    <!-- start header -->
+    <div id="header">
+        <div class="header-1">
+          <div class="logo">
+              <a href=""><img  src="https://ldt2711.github.io/WebAssignment/assets/img/logo.png" alt=""></a>
+          </div>
+          <ul class="subnav listitem-1">
+              <li><a href="https://ldt2711.github.io/WebAssignment/index.html">Trang Chủ</a></li>
+              <li><a href="https://ldt2711.github.io/WebAssignment/history/history.html">Lịch Sử</a></li>
+              <li><a href="https://ldt2711.github.io/WebAssignment/discounts/Khuyenmai.html">Khuyến Mãi</a></li>
+          </ul>
+        </div>  
+       <div class="header-2">
+          <ul class="subnav listitem-2">
+              <li><a href="https://ldt2711.github.io/WebAssignment/log/signin.html">Đăng kí</a></li>
+              <div class="kedoc"></div>
+              <li><a href="https://ldt2711.github.io/WebAssignment/log/login.html">Đăng nhập</a></li>
+          </ul>
+            <div class="user">
+            <div id="displayuser"> </div>
+            <div id="logout" onclick="logout()">Đăng xuất</div>
+     </div>
+       </div>
+    </div>
+    <!-- start container -->
+    <div class="container">
+        <!-- start content -->
+        <div id="content">
+            <!-- image and rating -->
+            <div class="first-content">
+                <div class="img"><img src="img/nobody.jpg" alt=""></div>
+                <div class="category">
+                    <div class="content-header">
+                        <h1 id="movie-title">Nobody</h1>
+                    </div>
+                    <div class="rating">
+                        <div class="type">
+                            <p>Quốc gia: </p>
+                            <p>Mỹ</p>
+                        </div>
+                        <div class="type">
+                            <p>Nhà sản xuất: </p>
+                            <p>Universal Pictures</p>
+                        </div>
+                        <div class="type">
+                            <p>Thể loại: </p>
+                            <ul>
+                                <li>Hành động</li>
+                                <li>, Hài</li>
+                            </ul>
+                        </div>
+                        <div class="type">
+                            <p>Đạo diễn: </p>
+                            <ul>
+                                <li>Ilya Naishuller</li>
+                            </ul>
+                        </div>
+                        <div class="type">
+                            <p>Diễn viên: </p>
+                            <ul>
+                                <li>Bob Odenkirk</li>
+                                <li>, Aleksey Serebryakov</li>
+                                <li>, Connie Nielsen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start summary -->
+            <div class="summary">
+                <div class="summary-header border">
+                    <h3>Nội Dung Phim</h3>
+                </div>
+                <div class="summary-content">
+                    <p>Hutch Mansell có một cuộc sống bình thường, có hai con với vợ Becca và một công việc văn phòng không mấy nổi bật trong công ty chế tạo kim loại của bố vợ Eddie. Cuộc hôn nhân của anh ấy căng thẳng, và cuộc sống làm việc của anh ấy có vẻ tẻ nhạt.Một đêm, những tên trộm đột nhập vào nhà anh ta, và cậu con trai tuổi teen của anh ta, Blake, đã tấn công người đàn ông và khiến anh ta rơi vào tình thế bế tắc.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- start movie showtime -->
+        <div id="movie_showtime">
+            <div class="movie_showtime-header border">
+                <h3>Lịch Chiếu</h3>
+            </div>
+            <div class="date">
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Hai</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Ba</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Tư</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Năm</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Sáu</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Thứ Bảy</span>
+                </a>
+                <a onclick="changeButton(this), selectDay(this)">
+                    <span>Chủ Nhật</span>
+                </a>
+            </div>
+            <div class="line hidden"></div>
+            <div class="ticket hidden">
+                <button onclick="selectTime(this)">18:00</button>
+                <button onclick="selectTime(this)">19:00</button>
+                <button onclick="selectTime(this)">20:00</button>
+                <button onclick="selectTime(this)">21:15</button>
+                <button onclick="selectTime(this)">22:15</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

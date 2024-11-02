@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="assets/css/log.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        function showPassword(id, icon) {
+          const p = document.getElementById(id);
+            if (p.type === "password") {
+              p.type = "text";
+              icon.classList.add("active"); 
+            } 
+            else {
+              p.type = "password";
+              icon.classList.remove("active"); 
+            }
+          }
+    </script>
+    <script src="assets/js/login.js"></script>
+</head>
+<body>
+      <div class="main">
+        <form action="" class="form">
+            <h3 class="heading">Đăng nhập</h3>
+            <div class="form-group">
+                <label for="fullname" class="form-label">Tên tài khoản</label>
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Nhập tên">
+            </div>
+            <span class="war c-fullname">Tên phải viết liền không dấu</span>
+            <span class="war  n-empty">Tên không được để trống</span>
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input type="password" id="password" name="password" class="form-input" placeholder="Nhập mật khẩu">
+                <i class="bx bx-show show-password" onclick="showPassword('password',this)"></i>
+            </div>
+            <span class="war p-empty"> Không được để trống</span>
+            <span class="war c-password">Mật khẩu phải từ 6-8 kí tự</span>
+            <span class="war nopass">Tên đăng nhập hoặc mật khẩu không đúng</span>
+            <button type="button" class="form-submit" onclick="validateForm(event)">Đăng Nhập</button>
+            <a href="https://ldt2711.github.io/WebAssignment/log/signin.html" class="form-link">Đăng kí</a>
+        </form>
+      </div>
+</body>
+</html>

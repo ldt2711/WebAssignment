@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* slider */
+#slider{
+    /* display: none; */
+    width:100%;
+    background-color:rgb(156, 150, 150);
+    position: relative;
+    margin-bottom: 10px;
+}
+#img-link{
+    display:block;
+}
+#img{
+    width: 100%;
+    height:auto;
+}
+.btn{
+    font-size:80px;
+    display:inline-block;
+    color:#999;
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+}
+
+.btn-right{
+    right:0;
+}
+.btn:hover{
+    color:#fff;
+    font-size:85px;
+}
+/* content */
+
+#content .head li{
+    font-weight: 700;
+    font-size: 40px;
+    display:inline-block;
+}
+#content .head li+li{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:30px;
+    font-weight: 500;
+    padding:50px 0 0 50px;
+}
+#content .nav{
+    border-left:5px solid rgb(50, 72, 238);
+    padding-left:10px;
+    margin-left:40px;
+}
+
+/* element content */
+.content_list{
+    margin:50px auto;
+    width:90vw;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content_item{
+    background-image: url(https://ldt2711.github.io/WebAssignment/assets/img/venom-poster.jpg);
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    margin:5px 30px;
+    width:300px;
+    height:450px;
+    border-radius:10px;
+    background-position: center;
+    background-size: cover;
+    overflow:hidden;
+    position: relative;
+}
+.overlay {
+    position: absolute; /* Đặt lớp phủ lên trên */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Màu đen với độ trong suốt */
+    opacity: 0; /* Bắt đầu với độ mờ */
+    transition: opacity 0.3s; /* Hiệu ứng chuyển đổi độ mờ */
+}
+.content_item:hover .overlay {
+    opacity: 1; /* Hiển thị lớp phủ khi hover */
+}
+.content_btn {
+    display:none;
+    font-size: 25px;
+    width:55%;
+    height:80px;
+    margin:20px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    line-height:80px;
+    color:rgb(255,255,255,0.85);
+   
+    font-family: sans-serif;
+}
+.content_item-buy{
+    background-color: orange;
+}
+.content_item-info{
+    border:2px solid #fff;
+}
+.content_item:hover .content_btn{
+    display:inline-block;
+    z-index:1;
+}
+.content_name{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+.content_btn:hover {
+    background-color:rgb(255, 115, 0);
+    border:none;
+}
+/* footer */
+#footer{
+    background-color: #000;
+    height: 200px;
+    width: 100%;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+}
+#footer div{
+    margin: 30px 80px;
+}
+#footer .logo{
+    max-width: 20%;
+    
+}
+#footer li{
+    font-size: 20px;
+}
+#footer li+li{
+    margin-left:20px;
+}
+#footer .logo img{
+    width: 210px;
+    height: 150px;
+}

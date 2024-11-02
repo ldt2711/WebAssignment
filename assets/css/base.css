@@ -1,0 +1,85 @@
+#header{
+    width:100%;
+    height:80px;
+    color:#fff;
+    background-image: linear-gradient(0,#000000,#2e2d2d);
+    display:flex;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#header .logo img{
+    height:80px;
+    width:auto;
+    box-sizing:unset;
+    padding:0 20px;
+}
+#header .header-1{
+    display:flex;
+}
+.subnav{
+    display:flex;
+}
+.subnav li{
+    display:inline-block;
+    height:80px;
+}
+
+.subnav li>a{
+    height:80px;
+    display:inline-block;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height:80px;
+    font-size:20px;
+    padding:0 30px;
+    font-weight: 500;
+    color:#fff;
+}
+.header-2 ul li>a{
+    text-transform:none;
+}
+.listitem-1 li:hover a{
+    color: #000;
+    background-color: #9e9a9a;
+}
+.listitem-2 li a{
+    padding:0 10px;
+}
+.listitem-2 li a:hover{
+    color:#939292;
+}
+
+.kedoc{
+    margin-top:24px;
+    display:inline-block;
+    width:1px;
+    height:30px;
+    background-color:#939191;
+}
+/*    */
+#displayuser{
+    display: none;
+    font-size:25px;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+}
+#logout{
+    display:none;
+    background-color: #fff;
+    color:#000;
+    line-height: 40px;
+    text-align: center;
+    margin-right:40px ;
+    cursor: pointer;
+}
+.user:hover #logout{
+    display:block;
+}
+#logout:active{
+    color:#4b4949;
+}

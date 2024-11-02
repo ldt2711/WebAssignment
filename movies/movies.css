@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    color: whitesmoke;
+    background: linear-gradient(#222222, #343435, #656668);
+    flex-direction: column;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #222222;
+}
+div#content{
+    height: auto;
+    margin: 10px 30px 10px 10px;
+}
+/* image and rating */
+div.first-content{
+    display: flex;
+    flex-direction: row;
+}
+div.img{
+    padding-right: 20px;
+}
+div.img img{
+    width: 20vw;
+    height: auto;
+
+}
+div.category{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+div.rating{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    height: 70%;
+}
+div.type{
+    display: flex;
+    flex-direction: row;
+}
+div.type p{
+    width: 10vw;
+}
+div.type p:first-child{
+    font-weight: bold;
+    color: rgb(240, 232, 117);
+}
+div.type li{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+/* summary */
+div.summary{
+    height: auto;
+    gap: 0px;
+    padding-left: 40px;
+    margin: 10px 20px;
+}
+div.summary-content{
+    padding-top: 10px;
+}
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    color: lightblue;
+}
+p {
+    width: 90%;
+    height: auto;
+}
+/* movie showtime */
+div#movie_showtime{
+    height: auto;
+    padding-left: 40px;
+    margin: 10px 30px;
+}
+div.border{
+    border-left: 5px solid lightblue;
+    padding-left: 10px;
+}
+.selected {
+    background-color: lightblue;
+    color: #343435;
+}
+div.date {
+    margin: 20px;
+    height: 55px;
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: transparent;
+}
+div.date a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+}
+div.date span{
+    margin: 0 auto;
+}
+div.line {
+    width: 100%;
+    height: 2px;
+    background-color: lightblue;
+    margin: 1rem 0;
+}
+div.ticket{
+    margin: 20px;
+    display: flex;
+    row-gap: 2px;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+div.hidden{
+    display: none;
+}
+div.ticket button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+div.ticket button:hover{
+    background-color: rgb(82, 81, 81);
+    color: whitesmoke;
+    border: 1px solid transparent;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
+    transition-property: all;
+}
